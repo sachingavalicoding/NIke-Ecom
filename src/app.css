@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --pri-color: #ffb534;
+  --sec-color: #c1f2b0;
+  --tert-color: #f95959;
+
+  --white-color: #f5f7f8;
+  --black-color: #000;
+  --pri-text-color: #233142;
+  --sec-text-color: #455d7a;
+  --tert-text-color: #a2a8d3;
+
+  --trasnition: all 0.4s linear;
+}
+
+/*  utilites classes  */
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1280px;
+  background-color: black;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  color: var(--sec-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--trasnition);
+}
+a:hover {
+  color: var(--tert-color);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--tert-color);
+}
+
+h2,
+h3,
+h4 {
+  font-size: 1.5rem;
+  color: var(--pri-text-color);
+}
+p,
+span {
+  font-size: 1rem;
+  color: var(--tert-text-color);
+  font-weight: 400;
+}
+/*  ===================Media Query===================  */
+/*  tablets & Laptop and small screen   */
+@media (min-width: 640px) {
+  .container {
+    width: 90%;
+    background-color: red;
+  }
+}
+
+/*  Tablets   */
+@media (min-width: 1024px) {
+  .container {
+    width: 85%;
+    background-color: greenyellow;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2.h3,
+  h4 {
+    font-size: 2rem;
+  }
+  p,
+  span {
+    font-size: 1.25rem;
+  }
+}
+/*  Desktop and big screen   */
+@media (min-width: 1280px) {
+  .container {
+    width: 85%;
+    background-color: aqua;
+  }
+}
