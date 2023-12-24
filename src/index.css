@@ -9,4 +9,13 @@
   .btn-sec {
     @apply py-2 px-4  text-slate-950 font-semibold rounded-sm shadow-md bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
+  .row {
+    @apply w-full h-[4rem] grid grid-cols-2 items-center justify-center my-5;
+  }
+  .box {
+    @apply w-full flex mt-5  gap-4 items-center;
+  }
+  .form-input {
+    @apply shadow-lg text-xl font-bold bg-slate-50 px-4 py-3 border-blue-600;
+  }
 }
