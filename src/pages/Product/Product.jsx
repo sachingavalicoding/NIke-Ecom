@@ -1,26 +1,20 @@
-import Card from "../../Components/Card/Card"
-import data from "../../data"
+import Navigation from "./Navigation"
+import ProductSection from "./ProductSection"
+import Recommended from "./Recommended"
+import Sidebar from "./Sidebar/Sidebar"
+
 const Product = () => {
 
     return (
-        <div className="container mx-auto w-full h-screen flex ">
-            <div className="w-[30%] min-h-screen bg-white">
-                <h2> Filter </h2>
-                <h2> Sort </h2>
+        <div className="w-full min-h-screen flex ">
+            <Sidebar />
+            <div className="w-full px-4 py-2 ">
+
+                <Navigation />
+                <Recommended />
+                <ProductSection />
             </div>
-            <ul className=" w-[70%] grid grid-cols-2 gap-10 mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {
-                    data.map((item) => {
-                        return (
-                            <Card key={Math.random() * 100}
-                                img={item.img}
-                                prize={item.newPrice}
-                                title={item.title}
-                            />
-                        )
-                    })
-                }
-            </ul>
+
         </div>
     )
 }
