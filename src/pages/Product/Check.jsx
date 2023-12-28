@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import data from "./data"
+import data from "../../data"
 const Check = () => {
     const [products, setProducts] = useState([]);
     const [input, setInput] = useState("");

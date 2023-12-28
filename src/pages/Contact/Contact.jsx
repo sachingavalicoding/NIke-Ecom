@@ -2,31 +2,36 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className='w-full h-screen bg-green-200'>
-            <form action="php.backend" className='w-[45rem] mx-auto mt-[4rem] bg-red-600 flex flex-col px-3 py-2 items-start justify-center gap-3   '>
-                <div className='  grid grid-cols-2 gap-3 place-items-center '>
-                    <div>
-                        <label>First  Name </label>
-                        <input type="text" placeholder='Enter First  Name....' />
-                    </div>
-                    <div>
-                        <label >Last Name </label>
-                        <input type="text" placeholder='Enter Last Name....' />
-                    </div>
+        <div className='contact__container w-full h-full p-6'>
+            <form action="php.backend" className='form__container mt-[4rem] w-[100%] mx-auto border-2 shadow-md flex flex-col gap-5 md:w-[60%] px-4 py-5'>
+                <div className='row'>
+
+                    <label>First  Name </label>
+                    <input type="text" placeholder='Enter First  Name....' />
                 </div>
-                <div className='  grid grid-cols-2 gap-3 place-items-center '>
-                    <div >
-                        <label >Email  </label>
-                        <input type="email" placeholder='Enter Last Name....' />
-                    </div>
-                    <div>
-                        <label > Phone No </label>
-                        <input type="tel" placeholder='Enter Last Name....' />
-                    </div>
+                <div className='row'>
+                    <label >Last Name </label>
+                    <input type="text" placeholder='Enter Last Name....' />
                 </div>
-                <div className='w-full flex items-center justify-start'>
+
+                <div className='row'>
+
+                    <label >Email  </label>
+                    <input type="email" placeholder='Enter Email ...' />
+                </div>
+                <div className='row'>
+                    <label > Phone No </label>
+                    <input type="tel" placeholder='Enter Phone no....' />
+                </div>
+
+                <div className='row'>
                     <label > Massage </label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+                    <textarea name="textarea" id="textarea" cols="30" rows="1"></textarea>
+                </div>
+
+                <div className='flex gap-5 items-center w-full justify-center'>
+                    <button type='reset' className="btn-pri">Clear</button>
+                    <button type='submit' className="btn-sec">Submit </button>
                 </div>
             </form>
 

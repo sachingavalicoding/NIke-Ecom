@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="md:hidden">
                 <FaBars className="text-3xl" onClick={() => setShow(!show)} />
             </div>
-            <div className={`${show !== true ? "hidden" : "w-screen h-screen flex flex-col  gap-3 px-5 py-5 bg-slate-50 backdrop-blur-sm z-10 fixed top-0 right-0 items-start justify-start"} `}>
+            <div className={`${show !== true ? "hidden" : "w-screen h-screen flex flex-col  gap-3 px-5 py-5 bg-slate-50 backdrop-blur-sm z-10 fixed top-0 right-0 items-start justify-start "} `}>
                 <div className="flex justify-around w-full gap-10 items-center ">
                     <h2 className="uppercase text-2xl "> Nike's Store </h2>
                     <RxCross2 className="text-3xl" onClick={() => setShow(!show)} />
