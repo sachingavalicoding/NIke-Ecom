@@ -1,15 +1,18 @@
-import { useContext } from "react"
-import { ProductContext } from "../../context/ProductContext"
+
+import About from "./About";
 import Heropage from "./Heropage";
+import PopularProducts from "./PopularProducts";
 import RecentProduct from "./RecentProduct";
 
 const Home = () => {
 
-    const { products } = useContext(ProductContext);
+
     return (
         <>
             <Heropage />
             <RecentProduct />
+            <About />
+            <PopularProducts />
         </>
     )
 }

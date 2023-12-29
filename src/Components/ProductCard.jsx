@@ -1,5 +1,5 @@
 
-import { BsCartCheck } from "react-icons/bs";
+
 const ProductCard = ({ img, title, star, reviews, newPrice, prevPrice }) => {
     return (
         <article className="w-[20rem] px-2 py-3 h-[20rem] shadow-lg flex flex-col justify-between">
