@@ -1,9 +1,10 @@
 
-
+import { BsCartCheck } from "react-icons/bs";
 const ProductCard = ({ img, title, star, reviews, newPrice, prevPrice }) => {
     return (
-        <article className="w-[20rem] px-2 py-3 h-[20rem] flex flex-col gap-2 items-center justify-center border-2  shadow-lg">
-            <img className="text-cetner w-5/6" src={img} alt={title} />
+        <article className="w-[20rem] px-2 py-3 h-[20rem] shadow-lg flex flex-col justify-between">
+
+            <img className="text-cetner w-5/6 " src={img} alt={title} />
             <div className="">
                 <h3 className="font-bold text-xl text-slate-950"> {title} </h3>
 
@@ -15,14 +16,14 @@ const ProductCard = ({ img, title, star, reviews, newPrice, prevPrice }) => {
                         {star}
                         {star}
                     </div>
-                    <div className="flex  font-bold text-red-400 mt-2 items-center justify-center">
+                    <div className="flex  font-bold text-red-400  items-center justify-center">
                         <p className="flex gap-2"> <del> {prevPrice} </del> <span> ${newPrice} </span> </p>
-                    </div>
-                    <div className="w-full flex items-center justify-center">
-                        <button className="btn-pri"> G  </button>
                     </div>
                 </div>
 
+            </div>
+            <div className="w-full flex items-center justify-center ">
+                <button className="btn-sec w-full"> Add TO Cart  </button>
             </div>
         </article>
     )
