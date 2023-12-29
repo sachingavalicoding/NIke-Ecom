@@ -1,16 +1,15 @@
-import Footer from '../../Components/Footer/Footer'
-import Navbar from '../../Components/Navbar/Navbar'
-import CardWraper from './CardWraper'
-import HeroPage from './HeroPage'
-import Testimonial from './Testimonial'
+import { useContext } from "react"
+import { ProductContext } from "../../context/ProductContext"
+import Heropage from "./Heropage";
+import RecentProduct from "./RecentProduct";
+
 const Home = () => {
+
+    const { products } = useContext(ProductContext);
     return (
         <>
-            <Navbar />
-            <HeroPage />
-            <CardWraper />
-            <Testimonial />
-
+            <Heropage />
+            <RecentProduct />
         </>
     )
 }

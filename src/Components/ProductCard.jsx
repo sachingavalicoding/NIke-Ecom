@@ -1,24 +1,30 @@
-import { AiFillStar } from "react-icons/ai"
-import { LuShoppingBag } from "react-icons/lu"
-const ProductCard = ({ img, title, reviews, newPrice, prevPrice }) => {
+
+
+const ProductCard = ({ img, title, star, reviews, newPrice, prevPrice }) => {
     return (
-        <section className="card w-[16rem] h-[20rem] flex items-start justify-around flex-col border-2">
-            <img className="w-10/12" src={img} alt="shoes" />
-            <div>
-                <h3 className="font-bold text-[1.1rem] px-3 ">{title} </h3>
-                <div className="reviews flex gap-2 items-center text-yellow-400">
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <span className="text-slate-800 font-semibold ">  {reviews}  </span>
+        <article className="w-[20rem] px-2 py-3 h-[20rem] flex flex-col gap-2 items-center justify-center border-2  shadow-lg">
+            <img className="text-cetner w-5/6" src={img} alt={title} />
+            <div className="">
+                <h3 className="font-bold text-xl text-slate-950"> {title} </h3>
+
+                <span> {reviews} </span>
+                <div className="flex items-center gap-3">
+                    <div className="flex gap-2 text-yellow-400 mt-2">
+                        {star}
+                        {star}
+                        {star}
+                        {star}
+                    </div>
+                    <div className="flex  font-bold text-red-400 mt-2 items-center justify-center">
+                        <p className="flex gap-2"> <del> {prevPrice} </del> <span> ${newPrice} </span> </p>
+                    </div>
+                    <div className="w-full flex items-center justify-center">
+                        <button className="btn-pri"> G  </button>
+                    </div>
                 </div>
-                <div className="flex gap-2 items-center justify-around">
-                    <p><del> {prevPrice}   </del> {newPrice} </p>
-                    <LuShoppingBag className="font-bold text-2xl text-purple-900" />
-                </div>
+
             </div>
-        </section>
+        </article>
     )
 }
 

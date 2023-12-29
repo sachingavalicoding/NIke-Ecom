@@ -1,6 +1,6 @@
 import { AiFillStar } from "react-icons/ai"
-import Card from "../../Components/Card/Card"
-const CardWraper = () => {
+import Card from "../../Components/Card"
+const RecentProduct = () => {
 
     const data = [
         {
@@ -65,4 +65,4 @@ const CardWraper = () => {
     )
 }
 
-export default CardWraper
+export default RecentProduct

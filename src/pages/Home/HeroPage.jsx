@@ -1,5 +1,7 @@
 import img1 from '../../img/slide/1.png'
 import img2 from '../../img/slide/2.png'
+import img3 from '../../img/slide/3.png'
+import img4 from '../../img/slide/4.png'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -37,8 +39,8 @@ const HeroPage = () => {
             >
                 <SwiperSlide><img src={img1} alt='not found' /> </SwiperSlide>
                 <SwiperSlide><img src={img2} alt='not found' /> </SwiperSlide>
-                <SwiperSlide><img src={img1} alt='not found' /> </SwiperSlide>
-                <SwiperSlide><img src={img2} alt='not found' /> </SwiperSlide>
+                <SwiperSlide><img src={img3} alt='not found' /> </SwiperSlide>
+                <SwiperSlide><img src={img4} alt='not found' /> </SwiperSlide>
 
                 ...
             </Swiper>

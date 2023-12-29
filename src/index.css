@@ -9,14 +9,4 @@
   .btn-sec {
     @apply py-2 px-4  text-slate-950 font-semibold rounded-sm shadow-md bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
-  .row {
-    @apply grid grid-cols-6 w-full h-[5rem] items-center justify-around md:px-2 py-3;
-  }
-  .row > input,
-  .row > textarea {
-    @apply border-2  col-span-4 md:col-span-5 px-3 py-4;
-  }
-  .row > label {
-    @apply col-span-2 text-xs font-bold  md:col-span-1 text-[1.1rem];
-  }
 }

@@ -1,17 +1,17 @@
-import Contact from './pages/Contact/Contact'
-import Home from './pages/Home/Home'
-import Product from "./pages/Product/Product"
-import Check from './pages/Product/Check'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Home, Product, Contact } from "./pages"
+import Navbar from "./Components/Navbar"
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Contact />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   )
 }
